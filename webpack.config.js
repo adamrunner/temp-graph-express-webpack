@@ -25,8 +25,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    // TODO: this only updates whenever you restart the server.
     new HtmlWebpackPlugin({
-      title: "Output Management"
+      title: "Output BLAH",
+      template: "index.html"
     })
   ],
   output: {
